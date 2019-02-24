@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+         <link rel="stylesheet" type="text/css" href="themes/style.css" />
+        <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+        <title>VilloApp</title>
+        <script src="js/prefixfree.min.js"></script>
+    </head>
+    <body onload="loadtheme();">
+	    <header id="header" class="flex fl-space"> 	
+		    <a href="home.html" class="icon" data-icon="&#xe917;"></a>		    
+		    <a href="home.html" class="logo"><img src="img/villomedia.png" alt="villomedia"/></a>	
+		    <nav class="main-menu flex fl-space">
+				<a href="#0" class="mobile-nav"><span class="menu-mobile-icon"></span></a>
+				<ul class="flex fl-center menu">
+					<!-- <li><a href="playlist.html">Ma Playlist</a></li> -->
+					<li><a href="#" class="creepromo"><span class="maxatteins">Créez une promotion</span> <span class="ttpromo">0</span>/3</a></li>
+					<li><a href="promo.html">Mes promos en cours</a></li>
+					<li><a href="contact.html">Contacter-nous</a></li>
+					<li><a href="index.html">Deconnexion</a></li>
+
+				</ul>
+			</nav>
+		</header>
+		<section class="sectionW bgcolor6"> 
+			<h2 class="title w100">Ajoutez une promotion</h2>
+			<form class="section bgcolor6 flex fl-wrap form-content" action="#">
+				<div class="flexGrid w50 fl-wrap form-inner">
+					<label class="flexGrid fl-wrap">
+						<h3 class="s-title w100">Choisissez un thème parmi les éléments ci-dessous :</h3>
+					</label>
+					<label class="w100" id="nomchmps"><span class="inmptxtold">Ancien prix</span><sup>*</sup> :  
+						<span class="error">  </span>
+						<input type="number" placeholder="Prix" name="prix" id="prix" size="20" value=""/>
+					</label>
+					<label class="w100"><span class="newprixtxtimp">Nouveau prix</span><sup>*</sup> : 
+						<span class="error"></span>
+						<input type="number" placeholder="Nouveau prix" name="nvxprix"  id="nvprix" size="20" value="" />
+					</label>
+<!--
+					<label class="w100">Promotion<sup>*</sup> : 
+						<span class="error">  </span>
+						<input type="text" placeholder="Code postal" name="cp" size="20" value="" />
+					</label>
+-->
+					<button type="button" class="icon-inbl btn modal-btn bgcolor1" data-icon="&#xea21;">Sélectionner une image</button>
+					
+					<button class="btn icon-inbl stroke jscolor {valueElement:'chosen-value', onFineChange:'setTextColor(this)'}" data-icon="&#xe93a;">
+		Changer la couleur de fond <input type="hidden" id="chosen-value" name="colorbackground" value="">
+	</button>
+				</div>	
+				<div class="prev w50">
+<!-- 					<img src="img/villomedia.png" alt="villomedia"/> -->
+					<iframe id="prevzns" src="http://villomediapps.villomedia.com/players/themes/bienvenue.php"></iframe>
+					<input type="hidden" id="idtheme" value="bienvenue.php" />
+					<input type="hidden" id="visuel" value="" />
+					<input type="hidden" id="idannonce" value="" />
+				</div>	
+				<button type="button" id="savepromo" class="btn bgcolor1">Envoyer</button>
+			</form>
+		</section>
+		<div class="modal">
+			<div class="modal-container">
+			    <h3 class="ss-title">Sélectionner une marque</h3>
+				<form action="#0" class="flex-row icon-txt search" method="post">
+					<input type="search" name="search" id="search" placeholder="Rechercher une marque">
+					<button type="button" name="searchBrand" id="searchBrand" class="icon btn bgcolor1" data-icon="&#xec35;"></button>
+				</form>			    
+				<ul class="listimg flexGrid fl-wrap grid-3 reponselsit">
+<!--
+				    <li>
+					    <a href="#0" class="listimg-item">
+					    	<img class="center-item" src="themes/thumbs/bienvenu.png" alt=""/>
+					    </a>
+				    </li>	
+				    <li>
+				    	<a href="#0" class="listimg-item">
+				    		<img class="center-item" src="themes/thumbs/bienvenu.png" alt=""/>
+				    	</a>
+				    </li>	
+				    <li>
+				    	<a href="#0" class="listimg-item">
+				    		<img class="center-item" src="themes/thumbs/bienvenu.png" alt=""/>
+				    	</a>
+				    </li>	
+-->			  
+			    </ul>
+			</div>
+			<a href="#0" class="icon modal-close" data-icon=""></a>
+	    </div>		
+		<script src="js/jquery-3.0.0.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="js/jscolor.js"></script>
+        <script src="js/script.js"></script> <!-- Resource jQuery -->
+        
+    </body>
+</html>

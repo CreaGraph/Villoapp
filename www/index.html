@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>VilloApp</title>
+		<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+    </head>
+    <body onload="_destroyconnexion();">
+		<section class="sectionW login flex fl-center">
+			<div class="login-container">
+				<div class="login-logo"><img src="img/logo2.svg"></div>
+			<form role="form" action="#" method="post" class="form-wrapper login-wrapper">
+				<div class="flex fl-wrap form-content login-content">
+					  
+					<span class="error login-error"> </span>
+				
+				    <label>
+					    <input name="login" id="login" placeholder="identifiant" type="text">
+				    </label>
+				   
+				    <label>
+					    <input id="password" title="Mot de passe" placeholder="Mot de passe" name="password" type="password">
+				    </label>
+				   
+				</div>
+			  
+		   <button class="btn bgcolor1 connexion" type="button" name="connexion">Se connecter</button>
+	       </form>		
+			</div>
+	    </section>
+
+		<script src="js/jquery-3.0.0.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="js/script.js"></script> <!-- Resource jQuery -->
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+    </body>
+</html>

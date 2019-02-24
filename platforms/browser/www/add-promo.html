@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+        <title>VilloApp</title>
+    </head>
+    <body>
+	    <header id="header" class="flex fl-space"> 	
+		    <a href="#0" class="logo"><img src="img/villomedia.png" alt="villomedia"/></a>	
+		    <nav class="main-menu flex fl-space">
+				<a href="#0" class="mobile-nav"><span class="menu-mobile-icon"></span></a>
+				<ul class="flex fl-center menu">
+					<li><a href="playlist.html">En diffusion</a></li>
+					<li><a href="add-promo.html">Créer une promotion</a></li>
+					<li><a href="promo.html">Mes promos en cours</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="sectionW bgcolor6"> 
+			<h2 class="title w100">Ajouter une promotion</h2>
+			<form id="section2" class="section bgcolor6 flex fl-wrap form-content sectionW" action="#">
+				<div class="flexGrid w50 fl-wrap form-inner">
+					<label class="flexGrid fl-wrap">
+						<h3 class="s-title w100">Choisissez un thème</h3>
+						<span class="check-icon"> 
+							<input type="radio" id="revenu1" name="habitation[]" checked="checked" value="1">
+							<i class="icon" data-icon="&#xea21;">Thème 1</i>
+						</span>	
+						<span class="check-icon">
+							<input type="radio" id="revenu2" name="habitation[]" value="2">
+							<i class="icon" data-icon="&#xea21;">Thème 2</i> 
+					    </span>
+					    <span class="check-icon">
+							<input type="radio" id="revenu2" name="habitation[]" value="2">
+							<i class="icon" data-icon="&#xea21;">Thème 3</i> 
+					    </span>	
+					</label>
+					<label class="w100" id="nomchmps">prix<sup>*</sup> :  
+						<span class="error">  </span>
+						<input type="text" placeholder="Nom" name="nom" size="20" value=""/>
+					</label>
+					<label class="w100">Nouveau prix<sup>*</sup> : 
+						<span class="error">  </span>
+						<input type="text" placeholder="Prénom" name="prenom" size="20" value="" />
+					</label>
+					<label class="w100">Promotion<sup>*</sup> : 
+						<span class="error">  </span>
+						<input type="text" placeholder="Code postal" name="cp" size="20" value="" />
+					</label>
+					<label class="file-label">
+				    	<span class="icon-inbl file btn bgcolor1" data-icon="&#xea21;">
+				    		<input name="promo-img" type="file">
+				    		<span>Sélectionner une image</span>
+				    	</span>
+				    </label>
+				</div>	
+				<div class="prev w50">
+					<img src="img/villomedia.png" alt="villomedia"/>
+				</div>	
+			</form>
+		</section>
+		<script src="js/jquery-3.0.0.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="js/script.js"></script> <!-- Resource jQuery -->
+    </body>
+</html>

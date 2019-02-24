@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+        <title>VilloApp</title>
+    </head>
+    <body onload="loadPromo();_testlogin();">
+	    <header id="header" class="flex fl-space">
+	     <a href="home.html" class="icon" data-icon="&#xe917;"></a>
+		    <a href="home.html" class="logo"><img src="img/villomedia.png" alt="villomedia"/></a>
+		    <nav class="main-menu flex fl-space">
+				<a href="#0" class="mobile-nav"><span class="menu-mobile-icon"></span></a>
+				<ul class="flex fl-center menu">
+				
+			<li><a href="#" class="creepromo"><span class="maxatteins">Créez une promotion</span> <span class="ttpromo">0</span>/3</a></li>
+					<li><a href="promo.html">Mes promos en cours</a></li>
+					<li><a href="contact.html">Contacter-nous</a></li>
+										<li><a href="index.html">Deconnexion</a></li>
+
+				</ul>
+			</nav>
+		</header>
+		<section class="sectionW bgcolor6"> 
+			<h2 class="title w100">Mes promos en cours</h2>
+			<div class="table-content">
+				<div class="table-row table-thead">
+					<div class="w30">THEME</div>
+					<div class="w15">prix</div>
+					<div class="w20">promo</div>
+					<div class="w15">Actif</div>
+					<div class="w35">actions</div>
+				</div>
+				<div class="flex-table">
+				
+					
+				</div>
+			</div>
+			<div id="error"></div>
+		</section>
+		<script src="js/jquery-3.0.0.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="js/script.js"></script> <!-- Resource jQuery -->
+        <!-- <script>loadPlaylist();</script> -->
+    </body>
+</html>
